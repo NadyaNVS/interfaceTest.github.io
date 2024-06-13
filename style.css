@@ -7,7 +7,7 @@
 
 :root {
   --c-gray-text: #2b2f33;
-  --c-gray-100: #fbf8f2;
+  --c-gray-100: #f8f8f8;
   --c-gray-200: #fcfdfe;
   --c-gray-300: #e9ebec;
   --c-gray-400: #e3e4ea;
@@ -28,7 +28,6 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   min-height: 100vh;
-  background-color: var(--c-gray-400);
   color: var(--c-gray-text);
   margin: 0;
 }
@@ -45,13 +44,10 @@ button {
 
 .phone {
   width: 100%;
-  max-width: 460px;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--c-gray-100);
   position: relative;
   z-index: 1;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header {
@@ -389,7 +385,10 @@ button {
 }
 
 .menu {
-  padding: 2rem 25px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+/*   padding: 2rem 25px; */
 }
 
 .menu-inner {
@@ -397,6 +396,7 @@ button {
   justify-content: center;
   border-radius: 15px;
   border: 2px solid var(--c-gray-900);
+  background-color: var(--c-gray-100);
   justify-content: space-between;
   padding: 0.75rem;
   position: relative;
