@@ -438,7 +438,7 @@ button {
   width: 100%;
   position: fixed;
   bottom: 0;
-/*   padding: 2rem 25px; */
+  padding: 1rem 10px;
 }
 
 .menu-inner {
